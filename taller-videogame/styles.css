@@ -1,0 +1,173 @@
+body {
+    background-color: indigo;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+canvas {
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+    background-color: #feff9d;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: #C3C5D6;
+    color: #fff;
+    font-family: inherit;
+    margin: 0;
+    padding: 5px 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+button svg {
+    color: #fff;
+}
+
+button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.start-btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* margin-top: 5px; */
+  width: 100%;
+}
+
+.start-btns button{
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: #C3C5D6;
+  color: #fff;
+  /* margin: 5px 20px; */
+  padding: 0 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.messages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 460px;
+}
+
+p {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.modal {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 50vh;
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+  background: linear-gradient(to left, #3A6073, #16222A);
+  border-radius: 10px;
+}
+
+.modal_close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #16222A;
+  border-radius: 50%;
+  background: #fff;
+  color: #16222A;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.modal_title {
+  background: #F1F2B5;
+  color: #16222A;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-top-left-radius: 10px;
+}
+
+.modal_message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  height: 40%;
+  font-size: 1rem;
+}
+
+.modal_message span {
+  font-size: 3.5rem;
+}
+
+.modal_btns {
+  display: flex;
+  flex-wrap: wrap;
+  height: 45%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_btns button {
+  background: #333333;
+  width: 80%;
+  max-width: 320px;
+  height: 60px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 440px) {
+    button {
+        margin-top: 25px;
+    }
+
+    #up,
+    #down {
+        margin-left: 100%;
+        margin-right: 100%;
+    }
+}
